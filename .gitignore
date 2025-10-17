@@ -1,0 +1,32 @@
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# === Virtual environments ===
+.env
+.venv/
+env/
+venv/
+
+# === Jupyter notebooks checkpoints ===
+.ipynb_checkpoints/
+
+# === Environment and config files ===
+*.env
+.env.local
+config.json
+secrets.json
+
+# === OS / IDE files ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# === Logs and cache ===
+*.log
+.cache/
+logs/
