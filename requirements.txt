@@ -1,3 +1,5 @@
+openai
+python-dotenv
 PyPDF2
 pytesseract
 pillow

@@ -27,6 +27,7 @@ except FileNotFoundError:
 # --- Step 4: Create prompt ---
 prompt = f"""
 You are an expert résumé parser.
+Make sure to list only the languages and skills that are actually mentioned in the résumé.
 Extract all skills from the resume text below and classify them into:
 - ProgrammingLanguages
 - FrameworksLibraries
@@ -47,11 +48,10 @@ Resume:
 {resume_text}
 """
 
-# --- Step 5: Call GPT-5 Mini ---
+# --- Step 5: Call GPT ---
 response = client.chat.completions.create(
-    model="gpt-5-mini",
+    model="gpt-4o",  # best model available now
     messages=[{"role": "user", "content": prompt}],
-    temperature=0.1,
     response_format={"type": "json_object"}
 )
 
@@ -61,6 +61,13 @@ raw = response.choices[0].message.content
 try:
     skills_data = json.loads(raw)
     print(json.dumps(skills_data, indent=2, ensure_ascii=False))
+
+    # --- Step 7: Save JSON to file ---
+    output_file = os.path.splitext(file_name)[0] + "_skills.json"
+    with open(output_file, "w", encoding="utf-8") as out_f:
+        json.dump(skills_data, out_f, indent=2, ensure_ascii=False)
+    print(f"✅ Skills data saved to: {output_file}")
+
 except json.JSONDecodeError:
     print("⚠️ JSON decoding failed, raw response:")
     print(raw)
