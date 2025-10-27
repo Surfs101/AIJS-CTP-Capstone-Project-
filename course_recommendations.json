@@ -1,0 +1,62 @@
+{
+    "Machine_Learning": [
+        {
+            "title": "Machine Learning",
+            "platform": "Coursera",
+            "duration": "11 weeks",
+            "difficulty": "Intermediate",
+            "description": "This course by Stanford University provides a broad introduction to machine learning, datamining, and statistical pattern recognition.",
+            "why_recommended": "This highly rated course is taught by Andrew Ng, a pioneer in the field, and covers both theoretical and practical aspects.",
+            "cost": "Freemium"
+        },
+        {
+            "title": "Machine Learning A-Z: Hands-On Python & R In Data Science",
+            "platform": "Udemy",
+            "duration": "44 hours",
+            "difficulty": "Beginner",
+            "description": "This course will teach you to create Machine Learning algorithms in Python and R from two Data Science experts.",
+            "why_recommended": "The course is practical with lots of coding exercises and is well-structured for beginners.",
+            "cost": "Paid"
+        }
+    ],
+    "React.js": [
+        {
+            "title": "React - The Complete Guide (incl Hooks, React Router, Redux)",
+            "platform": "Udemy",
+            "duration": "40 hours",
+            "difficulty": "Intermediate",
+            "description": "Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!",
+            "why_recommended": "This course is comprehensive, updated regularly and has plenty of practical examples.",
+            "cost": "Paid"
+        },
+        {
+            "title": "Full-Stack Web Development with React",
+            "platform": "Coursera",
+            "duration": "4 weeks",
+            "difficulty": "Intermediate",
+            "description": "This course is part of a Specialization and will teach you to develop and deploy React.js App on the front end, a Node.js/Express server on the back end, and MongoDB as the database layer.",
+            "why_recommended": "A well-rounded course that covers not only React.js but also full-stack development.",
+            "cost": "Freemium"
+        }
+    ],
+    "Docker": [
+        {
+            "title": "Docker Mastery: with Kubernetes +Swarm from a Docker Captain",
+            "platform": "Udemy",
+            "duration": "22.5 hours",
+            "difficulty": "Beginner",
+            "description": "Build, test, deploy containers with the best mega-course on Docker, Kubernetes, Compose, Swarm and Registry using DevOps.",
+            "why_recommended": "The course is comprehensive and includes hands-on coding exercises.",
+            "cost": "Paid"
+        },
+        {
+            "title": "Learn Docker & Containers using Interactive Browser-Based Scenarios",
+            "platform": "Katacoda",
+            "duration": "Self-paced",
+            "difficulty": "Beginner",
+            "description": "This course provides a hands-on introduction to Docker and Containers, using interactive scenarios that you can try out directly from your web browser.",
+            "why_recommended": "It offers an interactive environment which is great for beginners to understand Docker and containers.",
+            "cost": "Free"
+        }
+    ]
+}
